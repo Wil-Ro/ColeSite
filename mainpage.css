@@ -1,0 +1,45 @@
+html
+{
+    font-family: 'VT323', monospace;
+    background-color: rgb(43, 80, 201);
+}
+
+h1
+{
+    text-align: center;
+    margin-top: 45vh;
+    margin-bottom: 0;
+    font-size: 4.5rem;
+
+    transition: margin 1s;
+}
+
+h2
+{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 5vh;
+}
+
+
+#menu
+{
+    height: 50px;
+    text-align: center;
+    display: flexbox;
+    font-size: 0;
+    justify-content: space-between;
+
+    transition: font-size 1s;
+}
+
+#menu a
+{
+    transition: background-color 0.5s, color 0.5s;
+}
+
+#menu a:hover
+{
+    background-color: black;
+    color: rgb(43, 80, 201);
+}
