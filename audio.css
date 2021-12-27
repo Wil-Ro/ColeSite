@@ -1,0 +1,79 @@
+#audioContainer
+{
+    margin-left: 25vw;
+    margin-right: 25vw;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.audioPlayer
+{
+    background-color: rgb(43, 80, 201);
+    display: flex;
+    border: black solid 5px;
+    text-align: center;
+}
+
+.playButton
+{
+    margin: 1vw;
+    height: auto;
+    color: black;
+    background-color: transparent;
+    border: none;
+}
+
+
+.audioSlider
+{
+    width: 80%;
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    background:rgb(43, 80, 201);
+    background-image: url("images/bar.png");
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    overflow: hidden;
+    margin: auto;
+}
+
+.audioSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #000000;
+    box-shadow: -100vw 0px 0px 100vw #000000;
+}
+  
+.audioSlider::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background: #000000;
+}
+
+.audioSlider::-moz-range-progress {
+    width: 10px;
+    height: 10px;
+    background: #000000;
+}
+
+.timeContainer
+{
+    margin: auto;
+    margin-left: 1vw;
+}
+
+.durationContainer
+{
+    margin: auto;
+    margin-right: 1vw;
+}
+
+.timeSeparator
+{
+    margin: auto;
+}
+  

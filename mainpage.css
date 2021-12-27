@@ -4,6 +4,12 @@ html
     background-color: rgb(43, 80, 201);
 }
 
+a:link, a:visited
+{
+    text-decoration: none;
+    color: black;;
+}
+
 h1
 {
     text-align: center;
@@ -28,7 +34,7 @@ h2
     text-align: center;
     display: flexbox;
     font-size: 0;
-    justify-content: space-between;
+    justify-content: center;
 
     transition: font-size 1s;
 }
