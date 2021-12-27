@@ -13,7 +13,7 @@ function convertTime(timeInSec)
 function updateSliderBg(slider)
 {
     var value = (slider.value-slider.min)/(slider.max-slider.min)*100
-    slider.style.background = 'url("images/bar.png"), linear-gradient(to right, #000000 0%, #000000 ' + value + '%, transparent ' + value + '%, transparent 100%)'
+    slider.style.background = 'url("../images/bar.png"), linear-gradient(to right, #000000 0%, #000000 ' + value + '%, transparent ' + value + '%, transparent 100%)'
 }
 
 Array.prototype.forEach.call(audioList, audio => {
@@ -50,7 +50,7 @@ Array.prototype.forEach.call(audioList, audio => {
 
     audioElement.addEventListener("ended", event => {
         event.target.currentTime = 0
-        event.target.parentElement.getElementsByClassName("playButton")[0].children[0].src = "images/play.png"
+        event.target.parentElement.getElementsByClassName("playButton")[0].children[0].src = "../images/play.png"
     })
 
     // set the play button
@@ -58,12 +58,12 @@ Array.prototype.forEach.call(audioList, audio => {
         if (event.target.parentElement.parentElement.parentElement.getElementsByClassName("audioElement")[0].paused)
         {
         event.target.parentElement.parentElement.parentElement.getElementsByClassName("audioElement")[0].play()
-        event.target.src = "images/pause.png"
+        event.target.src = "../images/pause.png"
         }
         else
         {
         event.target.parentElement.parentElement.parentElement.getElementsByClassName("audioElement")[0].pause()
-        event.target.src = "images/play.png"
+        event.target.src = "../images/play.png"
         }
     })
 });

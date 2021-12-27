@@ -1,0 +1,63 @@
+html
+{
+    font-family: 'VT323', monospace;
+    background-color: rgb(43, 80, 201);
+    color: rgb(0, 0, 0);
+}
+
+body::-webkit-scrollbar
+{
+    display: none;
+}
+
+#title
+{
+    margin-left: 10vw;
+    margin-top: 10vh;
+}
+
+#mainContent
+{
+    margin: 20vw;
+    margin-top: 4vh;
+    margin-bottom: 10vw;
+    text-align: center
+}
+
+img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.imageContainer
+{
+    width: 25vw;
+    height: 25vw;
+    object-fit: contain;
+    margin: auto;
+    border: solid black 5px;
+    padding: 3px;
+
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+}
+
+h1
+{
+    margin-bottom: 5px;
+}
+
+a:visited, a:link
+{
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+a:hover
+{
+    background-color: black;
+    color: rgb(43, 80, 201);
+}
+

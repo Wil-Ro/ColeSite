@@ -1,10 +1,11 @@
 <HTML>
     <head>
-        <link rel = "stylesheet" href = "mainpage.css">
+        <link rel = "stylesheet" href = "stylesheets/mainpage.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-        <script src = "titlePageLoadAnim.js" defer></script>
+        <script src = "scripts/titlePageLoadAnim.js" defer></script>
+        <script src = "scripts/contactme.js" defer></script>
     </head>
     <body>
             <h1 id = "title">
@@ -14,11 +15,21 @@
                 a game composer
             </h2>
             <div id = "menu">
-                <a href = "my-work.html">my work</a>
+                <a href = "pages/my-work.html">my work</a>
                 |
-                <a>about me</a>
+                <a href = "pages/about-me.html">about me</a>
                 |
-                <a>contact me</a>
+                <a onclick = "toggleContact(this)">contact me</a>
+            </div>
+
+            <div id = "contactBar">
+                <a href = "mailto:coolkid@email.com">email me</a>
+                |
+                <a href = "https://twitter.com/atlas_cosmo">twitter</a>
+                |
+                <a href = "pages/cv.html">cv</a>
+                |
+                <a href = "tel:07969696969">07969696969</a>
             </div>
     </body>
 </HTML>
