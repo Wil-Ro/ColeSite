@@ -10,6 +10,12 @@ function convertTime(timeInSec)
 
 }
 
+function updateSliderBg(slider)
+{
+    var value = (slider.value-slider.min)/(slider.max-slider.min)*100
+    slider.style.background = 'url("images/bar.png"), linear-gradient(to right, #000000 0%, #000000 ' + value + '%, transparent ' + value + '%, transparent 100%)'
+}
+
 Array.prototype.forEach.call(audioList, audio => {
     // setup duration in slider and counter
     audioElement = audio.getElementsByClassName("audioElement")[0];
@@ -21,6 +27,7 @@ Array.prototype.forEach.call(audioList, audio => {
     // set up slider to change counter when used
     audio.getElementsByClassName("audioSlider")[0].addEventListener("input", event => {
         event.target.parentElement.getElementsByClassName("timeContainer")[0].innerHTML  = convertTime(event.target.value) 
+        updateSliderBg(event.target)
         changingSlider = true;
     })
 
@@ -37,8 +44,13 @@ Array.prototype.forEach.call(audioList, audio => {
             return
         }
         event.target.parentElement.getElementsByClassName("audioSlider")[0].value = Math.floor(event.target.currentTime)
-        console.log("pogging")
         event.target.parentElement.getElementsByClassName("timeContainer")[0].innerHTML = convertTime(event.target.currentTime)
+        updateSliderBg(event.target.parentElement.getElementsByClassName("audioSlider")[0])
+    })
+
+    audioElement.addEventListener("ended", event => {
+        event.target.currentTime = 0
+        event.target.parentElement.getElementsByClassName("playButton")[0].children[0].src = "images/play.png"
     })
 
     // set the play button
@@ -54,7 +66,6 @@ Array.prototype.forEach.call(audioList, audio => {
         event.target.src = "images/play.png"
         }
     })
-    
 });
 
 

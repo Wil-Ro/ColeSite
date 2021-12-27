@@ -36,7 +36,7 @@
     outline: none;
     -webkit-transition: .2s;
     transition: opacity .2s;
-    overflow: hidden;
+    /*  overflow: hidden;*/
     margin: auto;
 }
 
@@ -45,7 +45,7 @@
     width: 15px;
     height: 15px;
     background: #000000;
-    box-shadow: -100vw 0px 0px 100vw #000000;
+    /*box-shadow: -100vw 0px 0px 100vw #000000;*/
 }
   
 .audioSlider::-moz-range-thumb {
@@ -75,5 +75,10 @@
 .timeSeparator
 {
     margin: auto;
+}
+
+.songTitle
+{
+    margin-top: 2vh;
 }
   
