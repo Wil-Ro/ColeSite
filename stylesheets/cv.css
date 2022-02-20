@@ -1,0 +1,44 @@
+#cvBody
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#cvTop
+{
+    border: solid 3px black;
+    padding: 10px;
+    margin-bottom: 3px;
+}
+
+#cvLowerContainer
+{
+    border: solid 3px black;
+}
+
+#cvLower
+{
+    padding: 10px;
+    display: flex;
+    align-content: stretch;
+}
+
+#cvHistory
+{
+    text-align: left;
+    padding-left: 5%;
+    width: 50%;
+}
+
+#cvSkills
+{
+    text-align: left;
+    width: 50%;
+}
+
+#cvWork
+{
+    text-align: left;
+    padding-left: 6%;
+    padding-bottom: 20px;
+}
