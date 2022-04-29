@@ -16,7 +16,7 @@ h1
     text-align: center;
     margin-top: 45vh;
     margin-bottom: 0;
-    font-size: 4.5rem;
+    font-size: 7rem;
 
     transition: margin 1s;
 }
@@ -26,6 +26,7 @@ h2
     text-align: center;
     margin-top: 0;
     margin-bottom: 5vh;
+    font-size: 3rem;
 }
 
 
