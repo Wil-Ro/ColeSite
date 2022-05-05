@@ -1,0 +1,27 @@
+
+/*this all does the same thing*/
+
+::selection {
+    background-color: black;
+    color: rgb(43, 80, 201);
+}
+
+::-moz-selection {
+    background-color: black;
+    color: rgb(43, 80, 201);
+}
+
+::-o-selection {
+    background-color: black;
+    color: rgb(43, 80, 201);
+}
+
+::-ms-selection {
+    background-color: black;
+    color: rgb(43, 80, 201);
+}
+
+::-webkit-selection {
+    background-color: black;
+    color: rgb(43, 80, 201);
+}
